@@ -1,0 +1,45 @@
+.visit-info_container {
+    border: 2px solid rgb(5, 95, 76);
+    padding: 15px;
+}
+h2 {
+    margin: 0;
+}
+.checkbox {
+    margin-right: 10px;
+}
+.label {
+    margin-right: 25px;
+    display: block;
+    width: 130px;
+}
+.input {
+    border: none;
+    background-color: rgb(56, 54, 54);
+    border-bottom: 1px solid rgb(209, 213, 223);
+    font-size: 14px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    color: rgb(209, 213, 223);
+    outline: none;
+    height: 40px;
+    padding: 0px 10px;
+    width: 350px;
+  
+}
+.input:focus {
+  border-color: rgb(8, 119, 211);
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    li {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}
