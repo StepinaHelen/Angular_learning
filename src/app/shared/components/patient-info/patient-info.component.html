@@ -1,0 +1,28 @@
+<div class="visit-info_container">
+    <h2>Visit info</h2>
+    <form action="" [formGroup]="form">
+        <ul>
+            <li *ngFor="let item of listItem">
+                <input
+                    class="checkbox"
+                    type="{{item.type}}"
+                    id="{{item.field}}"
+                    [checked]="item.checked"
+                />
+                <label class="label" for="encounder">{{item.caption}}</label>
+                <input
+                    class="input"
+                    type="text"
+                    value=""
+                    placeholder="{{item.caption}}"
+                    formControlName="{{item.field}}"
+                />
+            </li>
+        </ul>
+    </form>
+</div>
+
+<!-- <div class="json_container">
+    <h2>JSON</h2>
+    <textarea class="textarea" name="info" id="info" rows="5" value ='{{form.value | json}}'></textarea>
+</div> -->
